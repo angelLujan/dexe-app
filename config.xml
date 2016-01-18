@@ -6,7 +6,7 @@
   <preference name="stay-in-webview" value="false"/>
   <plugin name="cordova-plugin-inappbrowser"/>
   <plugin name="cordova-plugin-whitelist"/>
-  <allow-navigation href="http://mixen.mx/web/dexe-app/"/>
+  <allow-navigation href="http*://*.mixen.mx/web/dexe-app/*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
