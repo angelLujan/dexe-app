@@ -1,0 +1,95 @@
+.input-os, .input-os-alert, .input-os-success, .ui-selectmenu-button {
+    height: 45px;
+    display: block;
+    width: 100% !important;
+    border: 1px solid #cbcbcb;
+    font: 400 14px Open Sans;
+    padding-left: 15px;
+    color: #2C2C2C;
+    position: relative;
+}
+
+.input-os-alert:focus {
+    border: 1px solid #ff1010 !important;
+}
+
+.input-os-success:focus {
+    border: 1px solid #0de54a !important;
+}
+
+.input-group .input-os, .input-os-right-small, .ui-selectmenu-button {
+    padding-left: 5px;
+    border-radius: 0px !important;
+}
+
+.input-os:focus, .input-os-right-small:focus, .ui-selectmenu-button:focus {
+    border-color: #10adff;
+    box-shadow: 0px 0px 9px 0.00px rgba(16, 173, 255, 0.18);
+}
+
+.input-os-success:focus, .input-os-right-small:focus, .ui-selectmenu-button:focus {
+    border-color: #0de54a;
+    box-shadow: 0px 0px 9px 0.00px rgba(16, 255, 145, 0.18);
+}
+
+.input-os-alert:focus, .input-os-right-small:focus, .ui-selectmenu-button:focus {
+    border-color: #ff1010;
+    box-shadow: 0px 0px 9px 0.00px rgba(255, 16, 16, 0.18);
+}
+
+.input-os-small {
+    height: 28px;
+    display: inline-block;
+    border: #cbcbcb solid 1px;
+    font: 400 16px Open Sans;
+    padding-left: 5px;
+    color: #2C2C2C;
+    width: 120px;
+}
+
+/* Remove padding from input form's wide section-oss, as usually these contain a lot of information */
+.section-os-fluid .section-os-content .input-os {
+    padding: 2px;
+    border-radius: 1px;
+}
+
+.right-input-icon {
+    top: -29px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: -50px;
+}
+
+.input-group-addon {
+    width: 13px;
+}
+
+.modal-dialog .right-input-icon {
+    top: -38px;
+}
+
+.right-input-icon.glyphicon {
+    color: #d7d7d7;
+}
+
+.subtotals {
+	float: right;
+}
+
+.subtotal-right {
+    float: right;
+        
+}
+
+.subtotals label, .subtotals .input-group-wrap {
+	display: inline-block;
+}
+
+.subtotals label {
+	position: relative;
+	top: -8px;
+}
+
+.no-overlay-search {
+	padding-right: 25px!important;
+}
