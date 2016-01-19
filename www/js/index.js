@@ -16,9 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var cordovaLoaded = false;
-var photos = [];
-var orderID = null;
 
 var app = {
 	// Application Constructor
