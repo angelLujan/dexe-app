@@ -37,6 +37,6 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
-        window.location = 'http://mixen.mx/web/dexe-app';
+        var ref = window.open('http://mixen.mx/web/dexe-app', '_blank', 'location=no', 'zoom=no');
     }
 };

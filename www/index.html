@@ -1,81 +1,49 @@
 <!DOCTYPE html>
 <!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
 -->
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/style2.css" />
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <title>Dexe</title>
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>Dexe</title>
+	</head>
 
-<body>
-   
-    <div data-role="page" id="login-page">
-        <div class="login-bar"></div>
-        <div class="login-logo"></div>
-        <br><br>
-        <div class="container-fluid login">
-            <div class="section-os vertcenter">
-                <div class="section-os-content">
-                    <div class="row">
-                        <form method="POST" action="http://www.mixen.mx/web/dexe-app/" accept-charset="UTF-8">
-                            <input name="_token" type="hidden" value="dDJgwKX3loA3KIh0N6I1JdE5j0Sxqmlox6aEJXco">
-                            <div class="col-xs-12">
-                                <div class="login-info">
-                                    <h3>LOGIN</h3>
-                                </div>
-                                <label for="email">Usuario (Correo Electrónico)</label>
-                                <input id="email" class="input-os" name="email" type="email">
-                            </div>
-                            <div class="col-xs-12">
-                                <label for="password">Contraseña</label>
-                                <input id="password" class="input-os" name="password" type="password" value="">
-                            </div>
-                            <div class="col-xs-12">
-                                <label for="shop">Taller ID</label>
-                                <input id="shop" class="input-os" name="shop" type="text">
-                            </div>
-                            <div class="col-xs-12">
-                                <input class="btn-submit btn-success-os" type="submit" value="Iniciar Sesión">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <a href="http://www.mixen.mx/web/dexe-app/">Faux Login</a>
-        </div>
-    </div>
-        <script type="text/javascript">
-            app.initialize();
-			window.location = 'http://mixen.mx/dexe/dexe-app';
-        </script>
-</body>
+	<body>
+
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+		</div>
+		<script type="text/javascript">
+			app.initialize();
+		</script>
+	</body>
 
 </html>

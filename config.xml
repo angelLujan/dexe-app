@@ -1,11 +1,9 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
   <name>Dexe</name>
-  <description>Aplicación para la gestión de datos de los .</description>
+  <description>Aplicación para la gestión de datos de los clientes.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
   <preference name="stay-in-webview" value="true"/>
-  <plugin name="cordova-plugin-inappbrowser"/>
-  <plugin name="cordova-plugin-whitelist"/>
   <allow-navigation href="http*://*.mixen.mx/web/dexe-app/*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
