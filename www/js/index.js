@@ -21,22 +21,27 @@ var photos = [];
 var orderID = null;
 
 var app = {
-    // Application Constructor
-    initialize: function () {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function () {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function () {
-        var ref = window.open('http://mixen.mx/web/dexe-app', '_blank', 'location=no', 'zoom=no');
-    }
+	// Application Constructor
+	initialize: function () {
+		this.bindEvents();
+	},
+	// Bind Event Listeners
+	//
+	// Bind any events that are required on startup. Common events are:
+	// 'load', 'deviceready', 'offline', and 'online'.
+	bindEvents: function () {
+		document.addEventListener('deviceready', this.onDeviceReady, false);
+	},
+	// deviceready Event Handler
+	//
+	// The scope of 'this' is the event. In order to call the 'receivedEvent'
+	// function, we must explicitly call 'app.receivedEvent(...);'
+	onDeviceReady: function () {
+		var ref = window.open('http://mixen.mx/web/dexe-app', '_self', 'zoom=no,location=no');
+		ref.addEventListener('exit', exitCallback);
+	}
 };
+
+function exitCallback() {
+	navigator.app.exitApp();
+}
