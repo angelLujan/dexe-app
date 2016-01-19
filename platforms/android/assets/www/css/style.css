@@ -1,0 +1,159 @@
+/*
+    Theme Name: Order OS
+    Theme URI: http://orderos.mx
+    Author: Order OS & Agencia Mixen
+    Author URI: http://orderos.mx/
+    Description: Tema para el sitio de Order OS.
+    Version: 1.0
+    Text Domain: Order OS - Automotive System
+    Bootstrap Version: v3.3.6 Upgrate 07-01-2015
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Pages */
+@import url(modules/login.css);
+@import url(modules/inputs.css);
+@import url(modules/sections.css);
+@import url(modules/buttons.css);
+@import url(modules/colors.css);
+
+body {
+    background: #f1f1f1;
+}
+
+.fullHeight {
+    position: relative;
+    height: 100vh;
+}
+
+.app {
+    padding-top: 60px;
+}
+
+.upper-bar{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    border-bottom: #cbcbcb solid 3px;
+    z-index: 9;
+    top: 0px;
+}
+
+.upper-bar img {
+    height: 50px;
+    margin: 4px auto;
+    display: block;    
+}
+
+.orders-info {
+    background-color: #f1f1f1;
+    color: #858585;
+    height: 43px;
+}
+
+.orders-info div {
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    margin: 10px -2px;
+    position: relative;
+}
+
+.orders-info div:after {
+    content: "|";
+    position: absolute;
+    right: 0;
+}
+
+.order, .orders-info {
+    border-bottom: #ff2610 solid 1px;
+}
+
+.order .car-color {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -15px;
+    border-radius: 50%
+}
+
+.order div {
+    width: 40%;
+    margin: 15px -2px;
+    display: inline-block;
+    text-align: center;
+    font-family: Open Sans;
+}
+
+.order:active {
+    background-color: #eee;
+    box-shadow: 1px 1px 1px 1px #ccc inset;
+}
+
+.photo-icon img {
+    max-width: 50%
+}
+
+.order {
+    width: 100%;
+    min-height: 50px;
+    background-color: #fff;
+}
+
+.orders-info div:first-child, .orders-info div:last-child, .order div:first-child, .order div:last-child {
+    width: 10%;
+}
+
+.photo-preview, .photo-preview img {
+    max-width: 100%;
+    max-height: 70vh;
+    display: block;
+    margin: 0px auto;
+}
+
+.input-os.description {
+    margin: 20px 0px;
+    max-height: 20vh;
+}
+
+.photoText {
+    display: none;
+}
+
+.photo-options {
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff2610;
+}
+
+.photo-options div {
+    display: inline-block;
+    width: 33%;
+    height: 10vh;
+    margin: 0px -1px;
+    background-color: #787878;
+}
+
+.photo-options div:active {
+    box-shadow: 1px 1px 1px 1px #ccc inset;
+    background-color: #999999;
+}
+
+.sources {
+    text-align: center;
+    width: 100%;
+}
+
+.source {
+    width: 45%;
+    display: inline-block;
+    background-color: cadetblue;
+}
+
+.dialog {
+    padding: 20px 10px;
+}
