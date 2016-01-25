@@ -34,8 +34,10 @@ var app = {
 	// The scope of 'this' is the event. In order to call the 'receivedEvent'
 	// function, we must explicitly call 'app.receivedEvent(...);'
 	onDeviceReady: function () {
-		var ref = window.open('http://mixen.mx/web/dexe-app', '_self', 'zoom=no,location=no');
+		var ref = window.open('http://mixen.mx/web/dexe/index-mobile.php', '_self', 'zoom=no,location=no,EnableViewPortScale=yes','EnableViewPortScale=yes');
 		ref.addEventListener('exit', exitCallback);
+		document.getElementById('footer-phone').remove();
+		document.getElementById('footer-mixen').remove();
 	}
 };
 

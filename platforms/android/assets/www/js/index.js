@@ -16,27 +16,31 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var cordovaLoaded = false;
-var photos = [];
-var orderID = null;
 
 var app = {
-    // Application Constructor
-    initialize: function () {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function () {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function () {
-        var ref = window.open('http://mixen.mx/web/dexe-app', '_blank', 'location=no', 'zoom=no');
-    }
+	// Application Constructor
+	initialize: function () {
+		this.bindEvents();
+	},
+	// Bind Event Listeners
+	//
+	// Bind any events that are required on startup. Common events are:
+	// 'load', 'deviceready', 'offline', and 'online'.
+	bindEvents: function () {
+		document.addEventListener('deviceready', this.onDeviceReady, false);
+	},
+	// deviceready Event Handler
+	//
+	// The scope of 'this' is the event. In order to call the 'receivedEvent'
+	// function, we must explicitly call 'app.receivedEvent(...);'
+	onDeviceReady: function () {
+		var ref = window.open('http://mixen.mx/web/dexe/index-mobile.php', '_self', 'zoom=no,location=no,EnableViewPortScale=yes','EnableViewPortScale=yes');
+		ref.addEventListener('exit', exitCallback);
+		document.getElementById('footer-phone').remove();
+		document.getElementById('footer-mixen').remove();
+	}
 };
+
+function exitCallback() {
+	navigator.app.exitApp();
+}
