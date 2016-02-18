@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="mx.mixen.dexe" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Dexe</name>
+    <name>Dexe Desarrolladora</name>
     <description>Aplicación para la gestión de datos de los clientes.</description>
-    <author email="support@phonegap.com" href="http://phonegap.com">PhoneGap Team</author>
+    <author email="support@phonegap.com" href="http://phonegap.com">Mixen</author>
     <content src="index.html" />
     <plugin name="org.apache.cordova.inappbrowser" />
     <plugin name="cordova-plugin-whitelist" />
