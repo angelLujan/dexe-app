@@ -1,8 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="mx.mixen.dexe" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="mx.mixen.dexe" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
     <feature name="InAppBrowser">
@@ -14,13 +21,16 @@
     <author email="support@phonegap.com" href="http://phonegap.com">PhoneGap Team</author>
     <content src="index.html" />
     <preference name="stay-in-webview" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
     <allow-navigation href="http*://*.mixen.mx/web/dexe-app/*" />
     <allow-navigation href="http*://*.mixen.mx/web/dexe/*" />
+    <allow-navigation href="*" />
     <access launch-external="yes" origin="tel:*" />
     <access launch-external="yes" origin="geo:*" />
     <access launch-external="yes" origin="mailto:*" />
     <access launch-external="yes" origin="sms:*" />
     <access launch-external="yes" origin="market:*" />
+    <access origin="*" />
     <icon src="www/img/icons/icon.png" />
     <icon platform="android" qualifier="ldpi" src="www/img/icons/icon-36.png" />
     <icon platform="android" qualifier="mdpi" src="www/img/icons/icon-48.png" />
