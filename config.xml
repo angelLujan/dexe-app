@@ -23,12 +23,11 @@
 	<icon platform="android" qualifier="mdpi" src="www/img/icons/icon-48.png" />
 	<icon platform="android" qualifier="hdpi" src="www/img/icons/icon-72.png" />
 	<icon platform="android" qualifier="xhdpi" src="www/img/icons/icon-96.png" />
-	<icon platform="blackberry" src="www/img/icons/icon-80.png" />
-	<icon platform="blackberry" src="www/img/icons/icon-80.png" state="hover" />
 	<icon height="57" platform="ios" src="www/img/icons/icon-57.png" width="57" />
 	<icon height="72" platform="ios" src="www/img/icons/icon-72.png" width="72" />
-	<icon height="114" platform="ios" src="www/img/icons/icon-57.png" width="114" />
-	<icon height="144" platform="ios" src="www/img/icons/icon-72.png" width="144" />
+	<icon height="114" platform="ios" src="www/img/icons/icon-114.png" width="114" />
+	<icon height="120" platform="ios" src="www/img/icons/icon-120.png" width="120" />
+	<icon height="144" platform="ios" src="www/img/icons/icon-144.png" width="144" />
 	<icon platform="webos" src="www/img/icons/icon-64.png" />
 	<icon platform="winphone" src="www/img/icons/icon-48.png" />
 	<icon platform="winphone" role="background" src="www/img/icons/icon-173.png" />
