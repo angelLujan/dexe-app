@@ -9,7 +9,7 @@
 	<plugin name="cordova-plugin-splashscreen" />
 	<plugin name="cordova-plugin-statusbar" />
 	<preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#303030" />
+    <preference name="StatusBarBackgroundColor" value="#1a1a1a" />
 	<preference name="stay-in-webview" value="false" />
 	<preference name="StatusBarOverlaysWebView" value="false" />
 	<allow-navigation href="http*://*.mixen.mx/web/dexe-app/*" />
